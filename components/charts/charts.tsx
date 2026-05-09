@@ -8,7 +8,7 @@ import { formatCurrency } from "@/lib/utils";
 function ChartFrame({ children, className = "h-80" }: { children: React.ReactNode; className?: string }) {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
-  if (!mounted) return <div className={`${className} w-full rounded-2xl bg-zinc-950`} />;
+  if (!mounted) return <div className={`${className} w-full rounded-2xl bg-white/[0.04]`} />;
   return <div className={`${className} w-full`}>{children}</div>;
 }
 

@@ -5,12 +5,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { MotionSection } from "@/components/ui/motion";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("demo@arkdev.io");
   const [password, setPassword] = useState("demo123");
   return (
-    <section className="mx-auto flex min-h-[70vh] max-w-xl items-center">
+    <MotionSection className="mx-auto flex min-h-[70vh] max-w-xl items-center">
       <Card className="w-full">
         <CardHeader>
           <CardTitle>Sign in to NovaBridge</CardTitle>
@@ -24,6 +25,6 @@ export default function LoginPage() {
           </form>
         </CardContent>
       </Card>
-    </section>
+    </MotionSection>
   );
 }

@@ -17,7 +17,7 @@ const data = Array.from({ length: 8 }, (_, index) => {
 export function PaymentHistoryChart() {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
-  if (!mounted) return <div className="h-96 w-full rounded-2xl bg-zinc-950" />;
+  if (!mounted) return <div className="h-96 w-full rounded-2xl bg-white/[0.04]" />;
   return (
     <div className="h-96 w-full">
       <ResponsiveContainer>

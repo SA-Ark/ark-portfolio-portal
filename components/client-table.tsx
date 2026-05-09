@@ -30,7 +30,7 @@ export function ClientTable({ clients }: { clients: Client[] }) {
           ))}
         </div>
       </div>
-      <div className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950/70">
+      <div className="overflow-hidden rounded-3xl border border-white/[0.06] bg-white/[0.04] backdrop-blur-xl/70">
         <div className="overflow-x-auto">
           <Table>
             <TableHeader>

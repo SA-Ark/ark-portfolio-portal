@@ -33,7 +33,7 @@ export function KanbanBoard({ projects }: { projects: Project[] }) {
               {columnProjects.map((project) => {
                 const client = clients.find((item) => item.id === project.clientId);
                 return (
-                  <article key={project.id} draggable onDragStart={() => setDragging(project.id)} onDragEnd={() => setDragging(null)} className="cursor-grab rounded-2xl border border-zinc-800 bg-zinc-950 p-4 transition hover:-translate-y-0.5 hover:border-blue-500/40 active:cursor-grabbing">
+                  <article key={project.id} draggable onDragStart={() => setDragging(project.id)} onDragEnd={() => setDragging(null)} className="cursor-grab rounded-2xl border border-white/[0.06] bg-white/[0.04] backdrop-blur-xl p-4 transition hover:-translate-y-0.5 hover:border-cyan-400/40 active:cursor-grabbing">
                     <div className="mb-3 flex items-start justify-between gap-3"><GripVertical className="mt-1 h-5 w-5 text-zinc-600" /><StatusBadge status={project.priority} /></div>
                     <h3 className="font-heading text-xl font-semibold text-white">{project.name}</h3>
                     <p className="mt-2 text-base text-zinc-400">{client?.name}</p>
@@ -42,7 +42,7 @@ export function KanbanBoard({ projects }: { projects: Project[] }) {
                       <span>{project.trackedHours}h tracked</span>
                       <span className="col-span-2">Due {formatDate(project.dueDate)}</span>
                     </div>
-                    <div className="mt-4 rounded-xl bg-zinc-900 p-3 text-sm text-zinc-400">Milestone: {project.milestone}</div>
+                    <div className="mt-4 rounded-xl bg-white/[0.06] p-3 text-sm text-zinc-400">Milestone: {project.milestone}</div>
                   </article>
                 );
               })}

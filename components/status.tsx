@@ -22,7 +22,7 @@ export function HealthBreakdown({ health }: { health: { responseTimeTrend: numbe
       {rows.map(([label, value]) => (
         <div key={label}>
           <div className="mb-2 flex items-center justify-between text-base"><span className="text-zinc-300">{label}</span><span className="font-medium text-white">{value}%</span></div>
-          <div className="h-2 rounded-full bg-zinc-900"><div className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-violet-500" style={{ width: `${value}%` }} /></div>
+          <div className="h-2 rounded-full bg-white/[0.06]"><div className="h-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" style={{ width: `${value}%` }} /></div>
         </div>
       ))}
     </div>

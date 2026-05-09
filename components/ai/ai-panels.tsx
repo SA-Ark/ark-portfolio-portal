@@ -12,7 +12,7 @@ export function SmartCompose({ clientName }: { clientName: string }) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2"><Sparkles className="h-6 w-6 text-blue-400" /> Smart Compose</CardTitle>
+        <CardTitle className="flex items-center gap-2"><Sparkles className="h-6 w-6 text-cyan-400" /> Smart Compose</CardTitle>
         <CardDescription>Generate a polished proposal follow-up from project context.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -34,7 +34,7 @@ export function SchedulingPanel() {
       </CardHeader>
       <CardContent className="space-y-3">
         {["Tue, Feb 10 • 10:30–11:15 AM PT", "Wed, Feb 11 • 1:00–1:45 PM PT", "Thu, Feb 12 • 2:00–2:45 PM PT"].map((time) => (
-          <div key={time} className="rounded-2xl border border-zinc-800 bg-zinc-950 p-4 text-base text-zinc-200">{time}</div>
+          <div key={time} className="rounded-2xl border border-white/[0.06] bg-white/[0.04] backdrop-blur-xl p-4 text-base text-zinc-200">{time}</div>
         ))}
       </CardContent>
     </Card>
@@ -46,17 +46,17 @@ export function DocumentSummarizer() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2"><UploadCloud className="h-6 w-6 text-blue-400" /> Document Summarizer</CardTitle>
+        <CardTitle className="flex items-center gap-2"><UploadCloud className="h-6 w-6 text-cyan-400" /> Document Summarizer</CardTitle>
         <CardDescription>Mock contract upload that returns a pre-generated executive summary.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <button onClick={() => setSummary(true)} className="flex w-full flex-col items-center justify-center rounded-3xl border border-dashed border-zinc-700 bg-zinc-950 p-8 text-center transition hover:border-blue-500 hover:bg-blue-500/5">
+        <button onClick={() => setSummary(true)} className="flex w-full flex-col items-center justify-center rounded-3xl border border-dashed border-zinc-700 bg-white/[0.04] p-8 text-center transition hover:border-cyan-400 hover:bg-blue-500/5">
           <UploadCloud className="mb-3 h-8 w-8 text-zinc-400" />
           <span className="text-base text-zinc-200">Drop Master Services Agreement.pdf</span>
           <span className="text-sm text-zinc-500">Click to simulate upload and summarize</span>
         </button>
         {summary ? (
-          <div className="rounded-2xl border border-blue-500/30 bg-blue-500/10 p-4 text-base leading-7 text-blue-100">
+          <div className="rounded-2xl border border-cyan-400/30 bg-cyan-400/10 p-4 text-base leading-7 text-blue-100">
             Summary: 24-month managed services agreement with quarterly roadmap reviews, SOC 2 data handling requirements, milestone-based invoicing, and a 30-day termination assistance clause. No unusual indemnity language detected.
           </div>
         ) : null}
