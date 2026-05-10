@@ -4,8 +4,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { CursorGlow } from "@/components/ui/cursor-glow";
 
 export const metadata: Metadata = {
-  title: "NovaBridge Client OS | Ark Portfolio Portal",
-  description: "Enterprise client management platform portfolio demo with seeded SaaS data."
+  title: "Ark Portal | Consulting Practice Management",
+  description: "Consulting practice management platform for client relationships, projects, invoices, and analytics."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -14,7 +14,7 @@ export default function LoginPage() {
     <MotionSection className="mx-auto flex min-h-[70vh] max-w-xl items-center">
       <Card className="w-full">
         <CardHeader>
-          <CardTitle>Sign in to NovaBridge</CardTitle>
+          <CardTitle>Sign in to Ark Portal</CardTitle>
           <CardDescription>Demo user: demo@arkdev.io / demo123</CardDescription>
         </CardHeader>
         <CardContent>

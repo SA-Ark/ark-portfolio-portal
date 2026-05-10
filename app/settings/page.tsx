@@ -21,7 +21,7 @@ export default function SettingsPage() {
       </MotionSection>
       <MotionSection className="grid gap-8 xl:grid-cols-[1fr_0.8fr]">
         <Card>
-          <CardHeader><CardTitle>Team members</CardTitle><CardDescription>Five seeded users with realistic access scopes.</CardDescription></CardHeader>
+          <CardHeader><CardTitle>Team members</CardTitle><CardDescription>Team members and their access scopes.</CardDescription></CardHeader>
           <CardContent>
             <Table>
               <TableHeader><TableRow><TableHead>Name</TableHead><TableHead>Role</TableHead><TableHead>Access</TableHead><TableHead>Status</TableHead></TableRow></TableHeader>
@@ -30,7 +30,7 @@ export default function SettingsPage() {
           </CardContent>
         </Card>
         <Card>
-          <CardHeader><CardTitle className="flex items-center gap-2"><Shield className="h-6 w-6 text-cyan-400" /> Role permissions</CardTitle><CardDescription>Demo role matrix for scoped client operations.</CardDescription></CardHeader>
+          <CardHeader><CardTitle className="flex items-center gap-2"><Shield className="h-6 w-6 text-cyan-400" /> Role permissions</CardTitle><CardDescription>Role matrix for scoped client operations.</CardDescription></CardHeader>
           <CardContent className="space-y-4">
             {roles.map((role) => <div key={role.name} className="rounded-2xl border border-white/[0.06] bg-white/[0.04] backdrop-blur-xl p-4"><h3 className="font-heading text-xl font-semibold text-white">{role.name}</h3><div className="mt-3 flex flex-wrap gap-2">{role.permissions.map((permission) => <Badge key={permission} variant="outline">{permission}</Badge>)}</div></div>)}
           </CardContent>

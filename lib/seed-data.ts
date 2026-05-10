@@ -81,9 +81,9 @@ export type TeamMember = {
 };
 
 const baseClients = [
-  ["NovaBridge Technologies", "Enterprise AI Infrastructure", "Strategic", "Active", 92, "Maya Chen", "Ari Patel", "ari.patel@novabridge.example", "San Francisco, CA", 842000],
-  ["HelioGrid Energy", "Renewable Energy", "Enterprise", "Active", 88, "Owen Brooks", "Leah Morris", "leah.morris@heliogrid.example", "Austin, TX", 615000],
-  ["Northstar Strategy Group", "Management Consulting", "Growth", "Onboarding", 81, "Priya Shah", "Jon Ellison", "jon.ellison@northstar.example", "Chicago, IL", 214000],
+  ["Meridian Health Systems", "Healthcare", "Enterprise", "Active", 92, "Maya Chen", "Ari Patel", "ari.patel@meridianhealth.example", "San Francisco, CA", 842000],
+  ["Velocity Commerce", "E-commerce", "Growth", "Active", 88, "Owen Brooks", "Leah Morris", "leah.morris@velocitycommerce.example", "Austin, TX", 615000],
+  ["Atlas Legal Group", "Legal Tech", "Enterprise", "Onboarding", 81, "Priya Shah", "Jon Ellison", "jon.ellison@atlaslegal.example", "Chicago, IL", 214000],
   ["Atlas Meridian Bank", "Financial Services", "Enterprise", "At Risk", 64, "Maya Chen", "Camila Ruiz", "camila.ruiz@atlas.example", "New York, NY", 978000],
   ["PulseForge Health", "Health Technology", "Strategic", "Active", 86, "Theo Grant", "Iris Taylor", "iris.taylor@pulseforge.example", "Boston, MA", 436000],
   ["Brightlane Creative", "Digital Agency", "Growth", "Paused", 57, "Owen Brooks", "Drew Harris", "drew.harris@brightlane.example", "Portland, OR", 128000],
@@ -225,7 +225,7 @@ export const messages: Message[] = Array.from({ length: 128 }, (_, index) => {
     id: `message-${index + 1}`,
     projectId: project.id,
     clientId: project.clientId,
-    author: role === "Client" ? client.primaryContact : role === "AI Assistant" ? "Nova AI" : owners[index % owners.length],
+    author: role === "Client" ? client.primaryContact : role === "AI Assistant" ? "Ark AI" : owners[index % owners.length],
     role,
     body: messageBodies[index % messageBodies.length],
     sentAt: new Date(Date.UTC(2026, 0, 5 + (index % 25), 9 + (index % 8), (index * 7) % 59)).toISOString()
@@ -277,15 +277,15 @@ export const pipelineData = [
 ];
 
 export const teamMembers: TeamMember[] = [
-  { id: "team-1", name: "Maya Chen", email: "maya@novabridge.example", role: "Admin", access: "Full workspace, billing, security", status: "Active" },
-  { id: "team-2", name: "Owen Brooks", email: "owen@novabridge.example", role: "Manager", access: "Client portfolio and reporting", status: "Active" },
-  { id: "team-3", name: "Priya Shah", email: "priya@novabridge.example", role: "Manager", access: "Projects, invoices, analytics", status: "Active" },
-  { id: "team-4", name: "Theo Grant", email: "theo@novabridge.example", role: "Staff", access: "Assigned projects and messages", status: "Active" },
-  { id: "team-5", name: "Ari Patel", email: "ari.patel@novabridge.example", role: "Client", access: "NovaBridge portal only", status: "Invited" }
+  { id: "team-1", name: "Maya Chen", email: "maya@arkportal.example", role: "Admin", access: "Full workspace, billing, security", status: "Active" },
+  { id: "team-2", name: "Owen Brooks", email: "owen@arkportal.example", role: "Manager", access: "Client portfolio and reporting", status: "Active" },
+  { id: "team-3", name: "Priya Shah", email: "priya@arkportal.example", role: "Manager", access: "Projects, invoices, analytics", status: "Active" },
+  { id: "team-4", name: "Theo Grant", email: "theo@arkportal.example", role: "Staff", access: "Assigned projects and messages", status: "Active" },
+  { id: "team-5", name: "Ari Patel", email: "ari.patel@meridianhealth.example", role: "Client", access: "Ark Portal only", status: "Invited" }
 ];
 
 export const recentActivity = [
-  "NovaBridge approved the phase two roadmap and expanded success budget.",
+  "Meridian Health Systems approved the phase two roadmap and expanded success budget.",
   "Atlas Meridian Bank opened a renewal risk review for delayed security sign-off.",
   "Cobalt CloudWorks paid INV-2026011 three days early.",
   "AI scheduling proposed three workshop windows for HelioGrid Energy.",

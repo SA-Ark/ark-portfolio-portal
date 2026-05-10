@@ -16,7 +16,7 @@ export function SmartCompose({ clientName }: { clientName: string }) {
         <CardDescription>Generate a polished proposal follow-up from project context.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <Button variant="gradient" onClick={() => { setLoading(true); setTimeout(() => { setDraft(`Hi ${clientName} team,\n\nThank you for the productive roadmap session. Based on the current milestones, we recommend prioritizing the client analytics rollout, procurement approval path, and a two-week enablement sprint. NovaBridge can deliver the next phase within six weeks with weekly executive readouts and a shared risk tracker.\n\nIf helpful, I can hold Tuesday 10:30 AM or Thursday 2:00 PM for a decision meeting.\n\nBest,\nMaya`); setLoading(false); }, 900); }}>
+        <Button variant="gradient" onClick={() => { setLoading(true); setTimeout(() => { setDraft(`Hi ${clientName} team,\n\nThank you for the productive roadmap session. Based on the current milestones, we recommend prioritizing the client analytics rollout, procurement approval path, and a two-week enablement sprint. Ark Portal can deliver the next phase within six weeks with weekly executive readouts and a shared risk tracker.\n\nIf helpful, I can hold Tuesday 10:30 AM or Thursday 2:00 PM for a decision meeting.\n\nBest,\nMaya`); setLoading(false); }, 900); }}>
           {loading ? "Generating draft..." : "Generate proposal email"}
         </Button>
         <Textarea value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="AI-generated draft appears here..." />

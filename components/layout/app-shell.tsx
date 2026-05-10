@@ -28,8 +28,8 @@ function SidebarContent() {
           <ShieldCheck className="h-6 w-6 text-white" />
         </div>
         <div>
-          <p className="font-heading text-2xl font-semibold text-white">NovaBridge</p>
-          <p className="text-sm text-[#8888a0]">Client OS</p>
+          <p className="font-heading text-2xl font-semibold text-white">Ark Portal</p>
+          <p className="text-sm text-[#8888a0]">Practice Management</p>
         </div>
       </Link>
       <nav className="space-y-2">
@@ -72,7 +72,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </aside>
       <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#050510]/70 px-4 py-4 shadow-2xl shadow-black/20 backdrop-blur-2xl lg:hidden">
         <div className="mx-auto flex max-w-[1200px] items-center justify-between">
-          <Link href="/" className="font-heading text-2xl font-semibold">NovaBridge</Link>
+          <Link href="/" className="font-heading text-2xl font-semibold">Ark Portal</Link>
           <Sheet trigger={<Button variant="secondary" size="sm"><Menu className="h-5 w-5" /> Menu</Button>}>
             <SidebarContent />
           </Sheet>

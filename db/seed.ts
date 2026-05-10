@@ -3,7 +3,7 @@ import * as schema from "./schema";
 import { clients, documents, invoices, messages, projects, teamMembers } from "../lib/seed-data";
 
 async function main() {
-  console.log("Seeding NovaBridge portfolio demo data...");
+  console.log("Seeding Ark Portal data...");
   await db.delete(schema.messages);
   await db.delete(schema.documents);
   await db.delete(schema.invoices);

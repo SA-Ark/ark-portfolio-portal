@@ -7,8 +7,8 @@ export default function ClientsPage() {
   return (
     <>
       <MotionSection className="space-y-4">
-        <h1 className="font-heading text-4xl font-semibold tracking-tight text-white">Client portfolio</h1>
-        <p className="max-w-3xl text-lg leading-8 text-zinc-400">Searchable, filterable relationship table with health score indicators, account ownership, annual recurring revenue, and contact recency across 200+ seeded accounts.</p>
+        <h1 className="font-heading text-4xl font-semibold tracking-tight text-white">Clients</h1>
+        <p className="max-w-3xl text-lg leading-8 text-zinc-400">Searchable, filterable relationship table with health score indicators, account ownership, annual recurring revenue, and contact recency.</p>
       </MotionSection>
       <Card>
         <CardHeader>

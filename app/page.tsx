@@ -19,9 +19,9 @@ export default function DashboardPage() {
     <>
       <MotionSection className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">
-          <Badge>Portfolio showcase • Enterprise client management</Badge>
-          <h1 className="font-heading text-4xl font-semibold tracking-tight text-white sm:text-5xl">Client operations built for high-touch enterprise teams.</h1>
-          <p className="max-w-3xl text-lg leading-8 text-zinc-400">NovaBridge Client OS brings relationships, projects, invoices, documents, messages, analytics, RBAC, and mocked AI assistance into one polished multi-tenant SaaS workspace.</p>
+          <Badge>Your consulting practice at a glance</Badge>
+          <h1 className="font-heading text-4xl font-semibold tracking-tight text-white sm:text-5xl">Client operations built for high-touch consulting teams.</h1>
+          <p className="max-w-3xl text-lg leading-8 text-zinc-400">Ark Portal brings relationships, projects, invoices, documents, messages, analytics, RBAC, and AI assistance into one multi-tenant consulting workspace.</p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/clients"><Button variant="gradient" size="lg">Explore clients <ArrowRight className="h-5 w-5" /></Button></Link>
             <Link href="/analytics"><Button variant="outline" size="lg">View analytics</Button></Link>
@@ -30,9 +30,9 @@ export default function DashboardPage() {
         <Card className="overflow-hidden">
           <CardHeader>
             <CardTitle className="flex items-center gap-2"><Sparkles className="h-6 w-6 text-cyan-400" /> AI briefing</CardTitle>
-            <CardDescription>Mocked assistant summary for the weekly client leadership review.</CardDescription>
+            <CardDescription>Assistant summary for the weekly client leadership review.</CardDescription>
           </CardHeader>
-          <CardContent className="text-base leading-7 text-zinc-300">Three strategic accounts show expansion potential this month. Atlas Meridian requires security-signoff attention, while NovaBridge Technologies is ready for phase-two proposal delivery.</CardContent>
+          <CardContent className="text-base leading-7 text-zinc-300">Three strategic accounts show expansion potential this month. Atlas Meridian requires security-signoff attention, while Meridian Health Systems is ready for phase-two proposal delivery.</CardContent>
         </Card>
       </MotionSection>
 
@@ -57,7 +57,7 @@ export default function DashboardPage() {
         <Card>
           <CardHeader>
             <CardTitle>Revenue momentum</CardTitle>
-            <CardDescription>12-month revenue trend from seeded portfolio data.</CardDescription>
+            <CardDescription>12-month revenue trend across your client base.</CardDescription>
           </CardHeader>
           <CardContent><RevenueAreaChart /></CardContent>
         </Card>
