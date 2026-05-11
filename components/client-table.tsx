@@ -8,6 +8,7 @@ import { formatCurrency, formatDate } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { HealthPill, StatusBadge } from "@/components/status";
+import { AiHealthBadge } from "@/components/ai-health-badge";
 import { Button } from "@/components/ui/button";
 
 export function ClientTable({ clients }: { clients: Client[] }) {
@@ -53,7 +54,7 @@ export function ClientTable({ clients }: { clients: Client[] }) {
                     </Link>
                   </TableCell>
                   <TableCell><StatusBadge status={client.status} /></TableCell>
-                  <TableCell><HealthPill score={client.healthScore} /></TableCell>
+                  <TableCell><AiHealthBadge client={client} /></TableCell>
                   <TableCell>{formatCurrency(client.arr)}</TableCell>
                   <TableCell>{client.owner}</TableCell>
                   <TableCell>{formatDate(client.lastContact)}</TableCell>

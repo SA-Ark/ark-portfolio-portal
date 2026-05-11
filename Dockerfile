@@ -22,4 +22,5 @@ USER nextjs
 EXPOSE 3000
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+ENV LLM_PROXY_URL=http://host.docker.internal:3200
 CMD ["node", "server.js"]
