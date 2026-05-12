@@ -3,6 +3,7 @@ import * as schema from "./schema";
 import { clients, documents, invoices, messages, projects, teamMembers } from "../lib/seed-data";
 
 async function main() {
+  if (!db) { console.error("No database connection"); process.exit(1); }
   console.log("Seeding Ark Portal data...");
   await db.delete(schema.messages);
   await db.delete(schema.documents);
