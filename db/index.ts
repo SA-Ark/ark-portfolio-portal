@@ -4,9 +4,13 @@ import * as schema from "./schema";
 
 const connectionString = process.env.DATABASE_URL;
 
+let db: ReturnType<typeof drizzle<typeof schema>> | null = null;
+
 if (!connectionString) {
-  throw new Error("DATABASE_URL is required for Drizzle database operations");
+  console.warn("DATABASE_URL is not set — db will be null. Using seeded/static data only.");
+} else {
+  const client = postgres(connectionString, { max: 1 });
+  db = drizzle(client, { schema });
 }
 
-const client = postgres(connectionString, { max: 1 });
-export const db = drizzle(client, { schema });
+export { db };
